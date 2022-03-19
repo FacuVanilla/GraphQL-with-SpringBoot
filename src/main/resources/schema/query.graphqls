@@ -1,0 +1,21 @@
+type Query{
+
+helloWorld : String
+
+getEmployeeName(empId : String): String
+
+getEmployeeNameIfPresent(inputRequest : InputRequest): Employee
+
+}
+
+input InputRequest {
+empId : String
+present : Boolean
+}
+
+type Employee {
+empId : String
+empName : String
+empEmail : String
+empNationality : String
+}
